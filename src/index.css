@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;605;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Sora", sans-serif;
+
+  /* Glassmorphic border glow gradients */
+  --color-secondary-container: #b600f8;
+  --color-surface-tint: #00dbe9;
+}
+
+@layer utilities {
+  .glass-card {
+    background: rgba(10, 25, 47, 0.65);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .glass-card:hover {
+    box-shadow: 0 0 25px rgba(0, 219, 233, 0.18);
+    border-color: rgba(0, 219, 233, 0.3);
+  }
+
+  /* Custom sub animations */
+  @keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+  }
+
+  .animate-heartbeat {
+    animation: heartbeat 1.2s infinite ease-in-out;
+  }
+}

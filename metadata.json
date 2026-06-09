@@ -1,0 +1,6 @@
+{
+  "name": "Midnight Prism Portfolio",
+  "description": "The professional digital portfolio of Sahedur Rahman Siyam, styled in high-fashion glassmorphism and Midnight Prism deep aesthetics. Featuring real-time custom interactive web components, retro game systems, synthesizers, and visual archives.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
